@@ -1,0 +1,46 @@
+/* css/index.css */
+
+.offer-banner {
+  display: flex;
+  gap: 1.5rem;
+  padding: 12px 20px;
+  background-color: #fff8e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.offer-track {
+  display: flex;
+  animation: slideOffers 20s linear infinite;
+}
+
+.offer-card {
+  flex-shrink: 0;
+  background-color: #ffc107;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  user-select: none;
+  white-space: nowrap;
+  margin-right: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.offer-card:hover {
+  background-color: #ffca28;
+}
+
+@keyframes slideOffers {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
